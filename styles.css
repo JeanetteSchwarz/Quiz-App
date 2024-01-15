@@ -74,6 +74,10 @@ body {
   background-color: lightgray;
 }
 
+.Menu a.active {
+  background-color: rgb(150, 209, 209);
+}
+
 .Tags {
   text-align: left;
   margin-bottom: 5px;
