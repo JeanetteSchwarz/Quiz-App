@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  border: 2px solid gray;
+  border-radius: 2rem;
+}
+.Quiz-card {
+  margin-top: 20px;
+  text-align: center;
+  border: 2px solid lightslategrey;
+  border-radius: 2rem;
+  position: relative;
+  background-color: antiquewhite;
+}
+
+.question_bookmark {
+  width: 0px;
+  height: 35px;
+  background-color: transparent;
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  border: solid 15px #b13a22;
+  border-bottom: solid 15px transparent;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.Answer-button {
+  margin-bottom: 30px;
+  background-color: aquamarine;
+  border: none;
+
+  font-size: large;
+}
+
+.Answer_Text {
+  visibility: hidden;
+  margin-bottom: 15px;
+}
