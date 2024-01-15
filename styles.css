@@ -29,10 +29,6 @@ body {
   border-radius: 50%;
 }
 
-#bookmark_question1.aktive::before {
-  background-color: red;
-}
-
 .footer {
   height: 50px;
   width: 100%;
