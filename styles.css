@@ -24,8 +24,13 @@ body {
 
 .question_bookmark {
   position: absolute;
-  top: 0;
-  right: 5px;
+  top: 5px;
+  right: 8px;
+  border-radius: 50%;
+}
+
+#bookmark_question1.aktive::before {
+  background-color: red;
 }
 
 .footer {
