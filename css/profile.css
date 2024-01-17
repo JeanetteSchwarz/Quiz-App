@@ -7,7 +7,23 @@
 body {
   display: flex;
   flex-direction: column;
+
   margin: 0px 5px 60px 1px;
+}
+
+.profileheadline {
+  text-align: center;
+}
+
+.profileimage {
+  border: 3px solid black;
+  border-radius: 50%;
+  /*margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;*/
 }
 
 .header {
@@ -54,15 +70,6 @@ body {
 
 .Menu a.active {
   background-color: rgb(150, 209, 209);
-}
-
-.profileheadline {
-  text-align: center;
-}
-
-.profileimage {
-  border: 3px solid black;
-  border-radius: 50%;
 }
 
 .darkmode {
