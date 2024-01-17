@@ -16,3 +16,11 @@ darkbutton.addEventListener("click", () => {
 
 /* Vorher abfragen welche Umgebung voreingestellt ist.
 Bei darkmode direkt im darkmode laden, default lightmode*/
+
+// Für Bookmark:
+// Button --> aktivieren
+// js: Button.addEventListener("click", () => {
+// bookmarkElement.classList.add("bookmarked")
+//})
+
+// if Button is bookmarked show on Bookmark page

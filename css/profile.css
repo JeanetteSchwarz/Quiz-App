@@ -46,6 +46,9 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+#Profile_icon active a {
+  background-color: rgb(150, 209, 209);
+}
 
 #Bookmark_icon {
   width: 100%;

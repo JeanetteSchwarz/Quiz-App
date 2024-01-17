@@ -70,7 +70,7 @@ body {
   align-items: center;
 }
 
-.Menu a.active {
+#Home_icon active a {
   background-color: rgb(150, 209, 209);
 }
 
