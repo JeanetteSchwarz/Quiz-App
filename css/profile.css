@@ -31,47 +31,6 @@ body {
   border: 2px solid gray;
 }
 
-.footer {
-  height: 50px;
-  width: 100%;
-  background-color: white;
-  position: fixed;
-  bottom: 0;
-  z-index: 5;
-  border-top: 1px solid black;
-}
-
-.Menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#Profile_icon active a {
-  background-color: rgb(150, 209, 209);
-}
-
-#Bookmark_icon {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#Home_icon {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#Profile_icon {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .darkmode {
   text-align: center;
   background-color: lightgray;

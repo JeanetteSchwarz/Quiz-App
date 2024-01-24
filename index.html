@@ -1,211 +1,203 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8" />
-  <meta lang="en" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiz-App</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <script src="js/index.js" defer></script>
-</head>
-<body>
-  <header class="header">
-    <h1 class="headline">Awesome Quiz App</h1>
-  </header>
-  <main>
-    <section class="Quiz-card">
-      <h2 class="Question">What does "html" stands for?</h2>
-      <button class="question_bookmark" id="bookmark_question1">
-        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-        <svg
-          width="15px"
-          height="15px"
-          viewBox="0 0 32 32"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-        >
-          <title>start-favorite</title>
-          <desc>Created with Sketch Beta.</desc>
-          <defs></defs>
-          <g
-            id="Page-1"
-            stroke="none"
-            stroke-width="1"
-            fill="none"
-            fill-rule="evenodd"
-            sketch:type="MSPage"
-          >
-            <g
-              id="Icon-Set"
-              sketch:type="MSLayerGroup"
-              transform="translate(-152.000000, -879.000000)"
-              fill="#000000"
-            >
-              <path
-                d="M168,903.21 L160.571,907.375 L161.989,898.971 L155.594,892.442 L164.245,891.317 L168,883.313 L171.722,891.317 L180.344,892.54 L174.011,899.002 L175.335,907.406 L168,903.21 L168,903.21 Z M184,891.244 L172.962,889.56 L168,879 L163.038,889.56 L152,891.244 L159.985,899.42 L158.095,911 L168,905.53 L177.905,911 L176.015,899.42 L184,891.244 L184,891.244 Z"
-                id="start-favorite"
-                sketch:type="MSShapeGroup"
-              ></path>
-            </g>
-          </g>
-        </svg>
-      </button>
-      <br />
-      <button class="Answer-button" id="answerOne" data-js="answerOne">
-        Show Answer
-      </button>
-      <div class="Answer_Text" data-js="answerText">
-        Hypertext Markup Language
-      </div>
-      <ul class="Tags">
-        <button>#html</button>
-        <button>#programming</button>
-        <button>#basics</button>
-      </ul>
-    </section>
-    <section class="Quiz-card">
-      <h2 class="Question">Where is the "Silicon Valley"?</h2>
-      <button class="question_bookmark">
-        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-        <svg
-          width="15px"
-          height="15px"
-          viewBox="0 0 32 32"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-        >
-          <title>start-favorite</title>
-          <desc>Created with Sketch Beta.</desc>
-          <defs></defs>
-          <g
-            id="Page-1"
-            stroke="none"
-            stroke-width="1"
-            fill="none"
-            fill-rule="evenodd"
-            sketch:type="MSPage"
-          >
-            <g
-              id="Icon-Set"
-              sketch:type="MSLayerGroup"
-              transform="translate(-152.000000, -879.000000)"
-              fill="#000000"
-            >
-              <path
-                d="M168,903.21 L160.571,907.375 L161.989,898.971 L155.594,892.442 L164.245,891.317 L168,883.313 L171.722,891.317 L180.344,892.54 L174.011,899.002 L175.335,907.406 L168,903.21 L168,903.21 Z M184,891.244 L172.962,889.56 L168,879 L163.038,889.56 L152,891.244 L159.985,899.42 L158.095,911 L168,905.53 L177.905,911 L176.015,899.42 L184,891.244 L184,891.244 Z"
-                id="start-favorite"
-                sketch:type="MSShapeGroup"
-              ></path>
-            </g>
-          </g>
-        </svg>
-      </button>
-      <br />
-      <button class="Answer-button">Show Answer</button>
-      <div class="Answer_Text">California/USA</div>
-      <ul class="Tags">
-        <button>#techknowledge</button>
-        <button>#general</button>
-        <button>#basics</button>
-      </ul>
-    </section>
-  </main>
-  <footer class="footer">
-    <nav class="Menu" id="navMenu">
-      <a class="active" id="Home_icon" href="index.html"
-        ><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-        <svg
-          width="40px"
-          height="40px"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M12 3.1875L21.4501 10.275L21.0001 11.625H20.25V20.25H3.75005V11.625H3.00005L2.55005 10.275L12 3.1875ZM5.25005 10.125V18.75H18.75V10.125L12 5.0625L5.25005 10.125Z"
-            fill="#080341"
-          />
-        </svg>
-      </a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-      <a lass="active" id="Bookmark_icon" href="bookmark.html"
-        ><?xml version="1.0" encoding="UTF-8" standalone="no"?>
-        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-        <svg
-          width="36px"
-          height="36px"
-          viewBox="0 0 32 32"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-        >
-          <title>start-favorite</title>
-          <desc>Created with Sketch Beta.</desc>
-          <defs></defs>
-          <g
-            id="Page-1"
-            stroke="none"
-            stroke-width="1"
-            fill="none"
-            fill-rule="evenodd"
-            sketch:type="MSPage"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="headline">Awesome Quiz App</h1>
+    </header>
+    <main>
+      <section class="Quiz-card">
+        <h2 class="Question">What does "html" stands for?</h2>
+        <button class="question_bookmark" id="bookmark_question1">
+          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+          <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+          <svg
+            width="15px"
+            height="15px"
+            viewBox="0 0 32 32"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
           >
+            <title>start-favorite</title>
+            <desc>Created with Sketch Beta.</desc>
+            <defs></defs>
             <g
-              id="Icon-Set"
-              sketch:type="MSLayerGroup"
-              transform="translate(-152.000000, -879.000000)"
-              fill="#000000"
+              id="Page-1"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+              sketch:type="MSPage"
+            >
+              <g
+                id="Icon-Set"
+                sketch:type="MSLayerGroup"
+                transform="translate(-152.000000, -879.000000)"
+                fill="#000000"
+              >
+                <path
+                  d="M168,903.21 L160.571,907.375 L161.989,898.971 L155.594,892.442 L164.245,891.317 L168,883.313 L171.722,891.317 L180.344,892.54 L174.011,899.002 L175.335,907.406 L168,903.21 L168,903.21 Z M184,891.244 L172.962,889.56 L168,879 L163.038,889.56 L152,891.244 L159.985,899.42 L158.095,911 L168,905.53 L177.905,911 L176.015,899.42 L184,891.244 L184,891.244 Z"
+                  id="start-favorite"
+                  sketch:type="MSShapeGroup"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </button>
+        <br />
+        <button class="Answer-button" id="answerOne" data-js="answerOne">
+          Show Answer
+        </button>
+        <div class="Answer_Text" data-js="answerText">
+          Hypertext Markup Language
+        </div>
+        <ul class="Tags">
+          <button>#html</button>
+          <button>#programming</button>
+          <button>#basics</button>
+        </ul>
+      </section>
+      <section class="Quiz-card">
+        <h2 class="Question">Where is the "Silicon Valley"?</h2>
+        <button class="question_bookmark">
+          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+          <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+          <svg
+            width="15px"
+            height="15px"
+            viewBox="0 0 32 32"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+          >
+            <title>start-favorite</title>
+            <desc>Created with Sketch Beta.</desc>
+            <defs></defs>
+            <g
+              id="Page-1"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+              sketch:type="MSPage"
+            >
+              <g
+                id="Icon-Set"
+                sketch:type="MSLayerGroup"
+                transform="translate(-152.000000, -879.000000)"
+                fill="#000000"
+              >
+                <path
+                  d="M168,903.21 L160.571,907.375 L161.989,898.971 L155.594,892.442 L164.245,891.317 L168,883.313 L171.722,891.317 L180.344,892.54 L174.011,899.002 L175.335,907.406 L168,903.21 L168,903.21 Z M184,891.244 L172.962,889.56 L168,879 L163.038,889.56 L152,891.244 L159.985,899.42 L158.095,911 L168,905.53 L177.905,911 L176.015,899.42 L184,891.244 L184,891.244 Z"
+                  id="start-favorite"
+                  sketch:type="MSShapeGroup"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </button>
+        <br />
+        <button class="Answer-button">Show Answer</button>
+        <div class="Answer_Text">California/USA</div>
+        <ul class="Tags">
+          <button>#techknowledge</button>
+          <button>#general</button>
+          <button>#basics</button>
+        </ul>
+      </section>
+    </main>
+
+    <!--
+      
+      NAVBAR
+    
+    -->
+
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-list-item">
+          <a class="navigation__link" href="index.html">
+            <svg
+              width="40px"
+              height="40px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M168,903.21 L160.571,907.375 L161.989,898.971 L155.594,892.442 L164.245,891.317 L168,883.313 L171.722,891.317 L180.344,892.54 L174.011,899.002 L175.335,907.406 L168,903.21 L168,903.21 Z M184,891.244 L172.962,889.56 L168,879 L163.038,889.56 L152,891.244 L159.985,899.42 L158.095,911 L168,905.53 L177.905,911 L176.015,899.42 L184,891.244 L184,891.244 Z"
-                id="start-favorite"
-                sketch:type="MSShapeGroup"
-              ></path>
-            </g>
-          </g>
-        </svg>
-      </a>
-
-      <a id="Profile_icon" href="profile.html"
-        ><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-        <svg
-          width="40px"
-          height="40px"
-          viewBox="-0.5 0 25 25"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12.0001 13.09C14.4909 13.09 16.5101 11.0708 16.5101 8.58C16.5101 6.08919 14.4909 4.07 12.0001 4.07C9.5093 4.07 7.49011 6.08919 7.49011 8.58C7.49011 11.0708 9.5093 13.09 12.0001 13.09Z"
-            stroke="#0F0F0F"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M8.98008 11.91C8.97008 11.91 8.97008 11.91 8.96008 11.92"
-            stroke="#0F0F0F"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M16.9701 12.82C19.5601 14.4 21.3201 17.19 21.5001 20.4C21.5101 20.69 21.2801 20.93 20.9901 20.93H3.01007C2.72007 20.93 2.49007 20.69 2.50007 20.4C2.68007 17.21 4.43007 14.43 6.99007 12.85"
-            stroke="#0F0F0F"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </a>
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 3.1875L21.4501 10.275L21.0001 11.625H20.25V20.25H3.75005V11.625H3.00005L2.55005 10.275L12 3.1875ZM5.25005 10.125V18.75H18.75V10.125L12 5.0625L5.25005 10.125Z"
+                fill="#080341"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="navigation-list-item">
+          <a class="navigation__link" href="bookmark.html">
+            <svg
+              width="40px"
+              height="40px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 6.2C5 5.07989 5 4.51984 5.21799 4.09202C5.40973 3.71569 5.71569 3.40973 6.09202 3.21799C6.51984 3 7.07989 3 8.2 3H15.8C16.9201 3 17.4802 3 17.908 3.21799C18.2843 3.40973 18.5903 3.71569 18.782 4.09202C19 4.51984 19 5.07989 19 6.2V21L12 16L5 21V6.2Z"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="navigation-list-item">
+          <a class="navigation__link" href="profile.html">
+            <svg
+              width="40px"
+              height="40px"
+              viewBox="0 0 20 20"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <title>profile_round [#1342]</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g
+                  id="Dribbble-Light-Preview"
+                  transform="translate(-140.000000, -2159.000000)"
+                  fill="#000000"
+                >
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path
+                      d="M100.562548,2016.99998 L87.4381713,2016.99998 C86.7317804,2016.99998 86.2101535,2016.30298 86.4765813,2015.66198 C87.7127655,2012.69798 90.6169306,2010.99998 93.9998492,2010.99998 C97.3837885,2010.99998 100.287954,2012.69798 101.524138,2015.66198 C101.790566,2016.30298 101.268939,2016.99998 100.562548,2016.99998 M89.9166645,2004.99998 C89.9166645,2002.79398 91.7489936,2000.99998 93.9998492,2000.99998 C96.2517256,2000.99998 98.0830339,2002.79398 98.0830339,2004.99998 C98.0830339,2007.20598 96.2517256,2008.99998 93.9998492,2008.99998 C91.7489936,2008.99998 89.9166645,2007.20598 89.9166645,2004.99998 M103.955674,2016.63598 C103.213556,2013.27698 100.892265,2010.79798 97.837022,2009.67298 C99.4560048,2008.39598 100.400241,2006.33098 100.053171,2004.06998 C99.6509769,2001.44698 97.4235996,1999.34798 94.7348224,1999.04198 C91.0232075,1998.61898 87.8750721,2001.44898 87.8750721,2004.99998 C87.8750721,2006.88998 88.7692896,2008.57398 90.1636971,2009.67298 C87.1074334,2010.79798 84.7871636,2013.27698 84.044024,2016.63598 C83.7745338,2017.85698 84.7789973,2018.99998 86.0539717,2018.99998 L101.945727,2018.99998 C103.221722,2018.99998 104.226185,2017.85698 103.955674,2016.63598"
+                      id="profile_round-[#1342]"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </nav>
-  </footer>
-</body>
+  </body>
+</html>

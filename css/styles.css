@@ -13,6 +13,9 @@ body {
   text-align: center;
   border: 2px solid gray;
 }
+
+/*-------Quizcard---------*/
+
 .Quiz-card {
   margin-top: 20px;
   text-align: center;
@@ -20,54 +23,6 @@ body {
   border-radius: 2rem;
   position: relative;
   background-color: turquoise;
-}
-
-.question_bookmark {
-  position: absolute;
-  top: 5px;
-  right: 8px;
-  border-radius: 50%;
-}
-
-#bookmark_question1.aktive::before {
-  background-color: red;
-}
-
-.footer {
-  height: 50px;
-  width: 100%;
-  background-color: white;
-  position: fixed;
-  bottom: 0;
-  z-index: 5;
-  border-top: 1px solid black;
-}
-
-.Menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#Bookmark_icon {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#Home_icon {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#Profile_icon {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .Tags {
@@ -94,6 +49,67 @@ body {
   margin-bottom: 15px;
 }
 
-.Menu a:active {
-  background-color: bisque;
+/*-----------Bookmark---------------*/
+
+.question_bookmark {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  border-radius: 50%;
+}
+
+#bookmark_question1.aktive::before {
+  background-color: red;
+}
+/*-------------Navbar----------------*/
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation {
+  border-top: 1px solid var(--black);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigation__list {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.navigation__list-item {
+  padding: 1.5rem 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation__list-item--active {
+  background-color: var(--secondary-light);
+}
+
+.navigation__list-item:not(:first-child) {
+  border-left: 1px solid var(--black);
+}
+
+.navigation__link {
+  color: var(--black);
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.navigation__link svg {
+  fill: currentcolor;
 }

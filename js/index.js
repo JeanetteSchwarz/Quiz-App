@@ -17,14 +17,6 @@ toggleAnswer.addEventListener("click", () => {
   answerElement.classList.toggle("showAnswer");
 });
 
-/* Einzelner Button für Darkmode, hier müsste noch ein zweiter Button für lightmode ergänzt werden.
-
-const darkbutton = document.querySelector('[data-js="darkmode"]');
-
-darkbutton.addEventListener("click", () => {
-  bodyElement.classList.add("switchdark");
-});*/
-
 /* Vorher abfragen welche Umgebung voreingestellt ist.
 Bei darkmode direkt im darkmode laden, default lightmode*/
 
