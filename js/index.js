@@ -8,6 +8,14 @@ togglebutton.addEventListener("click", () => {
   bodyElement.classList.toggle("switchdark");
 });
 
+//Bookmark-Button///
+
+const bookmarkButton = document.querySelector('[data-js="bookmarkButton"]');
+
+bookmarkButton.addEventListener("click", () => {
+  bookmarkButton.classList.add("buttonActive svg");
+});
+
 // Button show/hide Answer //
 const answerElement = document.querySelector('[data-js="answerOne"]');
 
