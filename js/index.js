@@ -1,9 +1,20 @@
+// Button switch dark/lightmode //
+
 const bodyElement = document.querySelector('[data-js="body"]');
 
 const togglebutton = document.querySelector('[data-js="toggle-button"]');
 
 togglebutton.addEventListener("click", () => {
   bodyElement.classList.toggle("switchdark");
+});
+
+// Button show/hide Answer //
+const answerElement = document.querySelector('[data-js="answerOne"]');
+
+const toggleAnswer = document.querySelector('[data-js="answerButton"]');
+
+toggleAnswer.addEventListener("click", () => {
+  answerElement.classList.toggle("showAnswer");
 });
 
 /* Einzelner Button für Darkmode, hier müsste noch ein zweiter Button für lightmode ergänzt werden.

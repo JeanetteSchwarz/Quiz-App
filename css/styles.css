@@ -19,7 +19,7 @@ body {
   border: 2px solid lightslategrey;
   border-radius: 2rem;
   position: relative;
-  background-color: lightcyan;
+  background-color: turquoise;
 }
 
 .question_bookmark {
@@ -70,10 +70,6 @@ body {
   align-items: center;
 }
 
-#Home_icon active a {
-  background-color: rgb(150, 209, 209);
-}
-
 .Tags {
   text-align: left;
   margin-bottom: 5px;
@@ -91,4 +87,13 @@ body {
 .Answer_Text {
   visibility: hidden;
   margin-bottom: 15px;
+}
+
+.Answer_Text.showAnswer {
+  visibility: visible;
+  margin-bottom: 15px;
+}
+
+.Menu a:active {
+  background-color: bisque;
 }

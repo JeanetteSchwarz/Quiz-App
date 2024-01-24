@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quiz-App</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/index.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -52,8 +53,12 @@
         </svg>
       </button>
       <br />
-      <button class="Answer-button">Show Answer</button>
-      <div class="Answer_Text">Hypertext Markup Language</div>
+      <button class="Answer-button" id="answerOne" data-js="answerOne">
+        Show Answer
+      </button>
+      <div class="Answer_Text" data-js="answerText">
+        Hypertext Markup Language
+      </div>
       <ul class="Tags">
         <button>#html</button>
         <button>#programming</button>
@@ -111,7 +116,7 @@
     </section>
   </main>
   <footer class="footer">
-    <nav class="Menu">
+    <nav class="Menu" id="navMenu">
       <a class="active" id="Home_icon" href="index.html"
         ><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
         <svg
@@ -129,6 +134,7 @@
           />
         </svg>
       </a>
+
       <a lass="active" id="Bookmark_icon" href="bookmark.html"
         ><?xml version="1.0" encoding="UTF-8" standalone="no"?>
         <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -167,6 +173,7 @@
           </g>
         </svg>
       </a>
+
       <a id="Profile_icon" href="profile.html"
         ><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
         <svg
