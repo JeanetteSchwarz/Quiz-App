@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8" />
-  <meta lang="en" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiz-App</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <script src="js/profile.js" defer></script>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-  <header class="header">
-    <h1 class="headline">Awesome Quiz App</h1>
-  </header>
-  <body class="body" data-js="body">
-    <h2 class="profileheadline">Louis the Cat</h2>
-   <img class="profileimage" src="Footage/IMG_7167.jpg" width="200" height="auto">
-   <p class="about"><h3>About Me:</h3>
-<br>
-Weit hinten, hinter den Wortbergen, 
-fern der Länder Vokalien und Konsonantien 
-leben die Blindtexte. Abgeschieden wohnen sie in 
-Buchstabhausen an der Küste des Semantik, 
-eines großen Sprachozeans. Ein kleines Bächlein 
-namens Duden fließt durch ihren Ort und versorgt 
-sie mit den nötigen Regelialien.
-</p>
-
-<button class="darkmode" data-js="toggle-button">switch dark/light</button>
-  </main>
- 
-  <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/form.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="headline">Quiz App</h1>
+    </header>
+    <main>
+      <form class="form" data-js="quizForm">
+        <label for="your-question">Your Question</label>
+        <textarea
+          name="your-question"
+          class="userInput"
+          data-js="userQuestion"
+        ></textarea>
+        <label for="your-answer">Your Answer</label>
+        <textarea
+          name="your-answer"
+          class="userInput"
+          data-js="userAnswer"
+        ></textarea>
+        <label for="tags">Suggested Tag</label>
+        <input name="tags" class="tags" />
+        <br />
+        <button class="submit__button" type="submit">Send</button>
+      </form>
+    </main>
+    <!--
       
       NAVBAR
     
@@ -96,8 +100,7 @@ sie mit den nötigen Regelialien.
             />
           </svg>
         </a>
-        
-        <a class="navigation__link" href="form.html">
+        <a class="navigation__link navigation__link---active" href="form.html">
           <svg
             width="40px"
             height="40px"
@@ -117,7 +120,7 @@ sie mit den nötigen Regelialien.
             />
           </svg>
         </a>
-        <a class="navigation__link navigation__link---active" href="profile.html">
+        <a class="navigation__link" href="profile.html">
           <svg
             fill="#000000"
             width="38px"
@@ -132,4 +135,5 @@ sie mit den nötigen Regelialien.
         </a>
       </nav>
     </footer>
-</body>
+  </body>
+</html>

@@ -6,22 +6,40 @@ bookmarkButton.addEventListener("click", () => {
   bookmarkButton.classList.toggle("buttonActive");
 });
 
-// Button show/hide Answer //
-/* const answerElement = document.querySelector('[data-js="answerOne"]');
+/*------------------------------------------*/
 
-const toggleAnswer = document.querySelector('[data-js="answerButton"]');
+//Answer-Button///
 
-toggleAnswer.addEventListener("click", () => {
-  answerElement.classList.toggle("showAnswer");
-}); */
+const answerButton = document.querySelector('[data-js="answerOne"]');
+const answerElement = document.querySelector('[data-js="answerText"]');
 
-/* Vorher abfragen welche Umgebung voreingestellt ist.
-Bei darkmode direkt im darkmode laden, default lightmode*/
+console.log(answerButton);
+console.log(answerElement);
 
-// Für Bookmark:
-// Button --> aktivieren
-// js: Button.addEventListener("click", () => {
-// bookmarkElement.classList.add("bookmarked")
-//})
+answerButton.addEventListener("click", () => {
+  answerElement.classList.toggle("hidden");
+  changeButtonText();
+});
 
-// if Button is bookmarked show on Bookmark page
+//Text auf Answer-Button ändern//
+
+const buttonText = document.querySelector('[data-js="answerOne"]');
+
+/* console.log(answerElement.classList.contains("hidden")); */
+/* console.log(answerElement.classList.contains("hidden")); */
+
+/* function changeButtonText() {
+  if (answerElement.classList.contains("hidden")) {
+    console.log("Yeahhhhh");
+  } else {
+    console.log("Noooooooo");
+  }
+} */
+
+function changeButtonText() {
+  if (answerElement.classList.contains("hidden")) {
+    buttonText.innerHTML = "Show Answer";
+  } else {
+    buttonText.innerHTML = "Hide Answer";
+  }
+}
