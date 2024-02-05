@@ -108,3 +108,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.form-headline {
+  text-align: center;
+  color: turquoise;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  font-size: xx-large;
+}
