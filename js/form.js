@@ -27,6 +27,15 @@ form.addEventListener("submit", (event) => {
   newQuestion.innerHTML = userQuestion.value;
   ownQuizcard.append(newQuestion);
 
+  // create new show Answer-Button
+  // append to card
+
+  const newAnswerButton = document.createElement("button");
+  newAnswerButton.classList.add("Answer-button");
+  newAnswerButton.setAttribute("type", "button");
+  newAnswerButton.innerHTML = "Show Answer";
+  ownQuizcard.append(newAnswerButton);
+
   // create new Answer
   // get value from form
   // append Answer to card
@@ -52,14 +61,6 @@ form.addEventListener("submit", (event) => {
   const newTag = document.createElement("button");
   newTag.innerHTML = userTags.value;
   newTagList.append(newTag);
-
-  // create new show Answer-Button
-  // append to card
-
-  const newAnswerButton = document.createElement("button");
-  newAnswerButton.classList.add("Answer-Button");
-  newAnswerButton.innerHTML = "Show Answer";
-  ownQuizcard.append(newAnswerButton);
 
   // create new Bookmark-Button
   // append to card
